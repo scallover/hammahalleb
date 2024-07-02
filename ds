@@ -1,0 +1,69 @@
+project-folder/
+│
+├── index.html
+├── styles/
+│   └── style.css
+└── scripts/
+    └── script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JavaScript Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <!-- Your content goes here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+/* styles/style.css */
+
+/* Example styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+// scripts/script.js
+
+// Example: Change heading text on click
+const heading = document.querySelector('h1');
+
+heading.addEventListener('click', function() {
+    heading.textContent = 'Hello, JavaScript!';
+});
